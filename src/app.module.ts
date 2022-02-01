@@ -3,6 +3,7 @@ import { RolesModule } from './roles/roles.module';
 import { ConfigModule } from "@nestjs/config"
 import { SequelizeModule } from "@nestjs/sequelize"
 import { UsersModule } from './users/users.module';
+import { PostsModule } from './posts/posts.module';
 
 @Module({
     controllers: [],
@@ -21,7 +22,8 @@ import { UsersModule } from './users/users.module';
             database: process.env.POSTGRES_DB,
             autoLoadModels: true
         }),
-        UsersModule
+        UsersModule,
+        PostsModule
     ]
 })
 export class AppModule {}
