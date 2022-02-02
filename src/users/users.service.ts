@@ -16,4 +16,9 @@ export class UsersService {
         user.roles = [role]
         return user;
     }
+
+    async getUserByEmail(email: string) {
+        const user = await this.userRepository.findOne({where: {email}, include: {all: true}})
+        return user;
+    }
 }
