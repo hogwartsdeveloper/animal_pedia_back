@@ -1,5 +1,5 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
-import path from 'path';
+import * as path from 'path';
 import * as fs from "fs"
 import * as uuid from "uuid"
 

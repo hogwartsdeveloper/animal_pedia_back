@@ -11,7 +11,7 @@ import { UserRoles } from "./roles/user-roles.model";
 import { Post } from "./posts/posts.model";
 import { FilesModule } from './files/files.module';
 import { ServeStaticModule } from "@nestjs/serve-static";
-import path from "path";
+import * as path from "path";
 
 @Module({
     controllers: [],
